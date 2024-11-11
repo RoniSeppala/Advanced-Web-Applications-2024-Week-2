@@ -93,3 +93,4 @@ boats.add(Boat)
 
 console.log(cars.list())
 console.log(boats.list())
+
