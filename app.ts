@@ -70,11 +70,7 @@ console.log(Boat)
 
 //4.
 class VehicleService<T> {
-    private items: T[]
-
-    constructor() {
-        this.items = []
-    }
+    private items: T[] = []
 
     add(vehicle:T):void {
         this.items.push(vehicle)
@@ -85,12 +81,11 @@ class VehicleService<T> {
     }
 }
 
-let cars = new VehicleService<ICar>;
-let boats = new VehicleService<IBoat>;
+let cars = new VehicleService<ICar>();
+let boats = new VehicleService<IBoat>();
 
 cars.add(Car)
 boats.add(Boat)
 
 console.log(cars.list())
 console.log(boats.list())
-
